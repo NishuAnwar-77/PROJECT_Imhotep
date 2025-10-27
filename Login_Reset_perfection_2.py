@@ -116,12 +116,12 @@ class ForgotPasswordUI(QWidget):
         layout.setSpacing(12)
 
         title = QLabel("Imhotep")
-        title.setFont(QFont("Arial Black", 18))
+        title.setFont(QFont("Segoe UI", 18, QFont.Bold))
         title.setAlignment(Qt.AlignCenter)
         layout.addWidget(title)
 
         subtitle = QLabel("Reset your password")
-        subtitle.setFont(QFont("Arial", 10))
+        subtitle.setFont(QFont("Segoe UI", 10))
         subtitle.setStyleSheet("color: #555;")
         subtitle.setAlignment(Qt.AlignCenter)
         layout.addWidget(subtitle)
@@ -152,7 +152,7 @@ class ForgotPasswordUI(QWidget):
         layout.addLayout(pwd_row)
 
         self.strength_label = QLabel("")
-        self.strength_label.setFont(QFont("Arial", 8))
+        self.strength_label.setFont(QFont("Segoe UI", 8))
         self.strength_label.setAlignment(Qt.AlignCenter)
         layout.addWidget(self.strength_label)
 
@@ -174,7 +174,7 @@ class ForgotPasswordUI(QWidget):
         layout.addLayout(conf_row)
 
         info = QLabel("For verification, please have your NID or Birth Certificate ready.")
-        info.setFont(QFont("Arial", 8))
+        info.setFont(QFont("Segoe UI", 8))
         info.setStyleSheet("color: #777;")
         info.setAlignment(Qt.AlignCenter)
         layout.addWidget(info)
@@ -371,12 +371,12 @@ class LoginUI(QWidget):
         layout.setSpacing(14)
 
         title = QLabel("Imhotep")
-        title.setFont(QFont("Arial Black", 18))
+        title.setFont(QFont("Segoe UI", 18, QFont.Bold))
         title.setAlignment(Qt.AlignCenter)
         layout.addWidget(title)
 
         subtitle = QLabel("Log in to your account")
-        subtitle.setFont(QFont("Arial", 10))
+        subtitle.setFont(QFont("Segoe UI", 10))
         subtitle.setStyleSheet("color: #555;")
         subtitle.setAlignment(Qt.AlignCenter)
         layout.addWidget(subtitle)
@@ -406,7 +406,7 @@ class LoginUI(QWidget):
         layout.addLayout(pwd_row)
 
         forgot = QLabel("<a href='#' style='color:#007BFF;text-decoration:none;'>Forgot Password?</a>")
-        forgot.setFont(QFont("Arial", 9))
+        forgot.setFont(QFont("Segoe UI", 9))
         forgot.setAlignment(Qt.AlignLeft)
         forgot.setTextInteractionFlags(Qt.TextBrowserInteraction)
         forgot.linkActivated.connect(self.open_forgot_password)
@@ -528,5 +528,6 @@ if __name__ == "__main__":
     win = LoginUI()
     win.show()
     sys.exit(app.exec_())
+
 
 
