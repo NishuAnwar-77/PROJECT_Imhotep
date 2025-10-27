@@ -1,2 +1,2 @@
 # PROJECT_Imhotep
-Log in page 
+It's Doctor,Patient and Pharmacist managment digital system..... 
