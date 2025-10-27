@@ -17,7 +17,7 @@ class AuthHandler:
     def connect_db():
         try:
             conn = mysql.connector.connect(
-                host="localhost", user="root", password="", database="imhotep_db"
+                host="localhost", user="root", password="", database="Imhotep"
             )
             return conn
         except db_errors.Error as e:
@@ -58,6 +58,7 @@ class AuthHandler:
             return "Password successfully updated"
         except db_errors.Error as e:
             return "Database Error: " + str(e)
+
 
 
 # -------------------- Forgot Password Window --------------------
@@ -527,3 +528,5 @@ if __name__ == "__main__":
     win = LoginUI()
     win.show()
     sys.exit(app.exec_())
+
+
